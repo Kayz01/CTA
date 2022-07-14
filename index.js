@@ -19,8 +19,9 @@ client.on("message", msg => {
     // Prise de service
     if (msg.content === prefix + "pds") {
         const embed = new Discord.MessageEmbed()
-            .setTitle("CTA");
-        
+            .setColor ("#33FF33")
+            .setTitle("Centre de Traitement d'Alerte");
+
         msg.channel.send({ embeds: [embed]})
     }
 
