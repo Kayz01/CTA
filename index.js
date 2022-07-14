@@ -20,7 +20,8 @@ client.on("message", msg => {
     if (msg.content === prefix + "pds") {
         const embed = new Discord.MessageEmbed()
             .setColor ("#33FF33")
-            .setTitle("Centre de Traitement d'Alerte");
+            .setTitle("Prise de Service")
+            .setAuthor("Centre de Traitement d'Alerte", "https://www.canva.com/design/DAFGbLOiDhg/306sGSmk0SP-yTiSHXMO4w/edit?utm_content=DAFGbLOiDhg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton")
 
         msg.channel.send({ embeds: [embed]})
     }
