@@ -21,7 +21,7 @@ client.on("message", msg => {
         const embed = new Discord.MessageEmbed()
             .setTitle("CTA");
         
-        msg.channel.send({ embed: [embed]});
+        msg.channel.send({ embeds: [embed]})
     }
 
     else if (msg.content === prefix + "help"){
