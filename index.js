@@ -15,8 +15,13 @@ client.on("ready", () => {
 });
 
 client.on("message", msg => {
+
+    // Prise de service
     if (msg.content === prefix + "pds") {
-        msg.channel.send("pong");
+        const embed = new Discord.MessageEmbed()
+            .setTitle("CTA");
+        
+        msg.channel.send({ embed: [embed]});
     }
 
     else if (msg.content === prefix + "help"){
